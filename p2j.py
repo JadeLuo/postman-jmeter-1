@@ -310,7 +310,7 @@ def postman2jmeter(postman_dict):
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        print("")
+        print("Type your filename as first parameter please.")
         exit(-1)
     postman_json = get_postman(sys.argv[1])
     project_name, jmeter_body = postman2jmeter(postman_json)
